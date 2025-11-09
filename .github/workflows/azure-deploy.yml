@@ -31,10 +31,15 @@ jobs:
 
     - name: Deploy to Azure Web App
       run: |
-        az webapp deployment source config-zip \
+        az webapp deploy \
           --resource-group ${{ env.AZURE_RESOURCE_GROUP }} \
           --name ${{ env.AZURE_WEBAPP_NAME }} \
-          --src deploy.zip
+          --src-path deploy.zip \
+          --type zip \
+          --async true
+
+        echo "Deployment initiated successfully!"
+        echo "App URL: https://${{ env.AZURE_WEBAPP_NAME }}.azurewebsites.net"
 
     - name: Logout from Azure
       run: az logout
