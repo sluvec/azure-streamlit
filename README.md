@@ -52,6 +52,10 @@ Dashboard jest wdrażany automatycznie na Azure App Service przez GitHub Actions
 
 ### Dokumentacja Deployment
 
+📚 **Dla nowych projektów zaczynij tutaj**:
+- **[QUICK_START_GUIDE.md](QUICK_START_GUIDE.md)** - 🚀 **START TUTAJ!** Przewodnik krok po kroku z wszystkimi lekcjami
+
+📖 **Dokumentacja techniczna**:
 - **[DEPLOYMENT_REPORT.md](DEPLOYMENT_REPORT.md)** - Szczegółowy raport z procesu wdrożenia, napotkanych problemów i rozwiązań
 - **[WORKFLOW_TEMPLATE.md](WORKFLOW_TEMPLATE.md)** - Kompletny szablon i instrukcje do wdrażania podobnych projektów
 
