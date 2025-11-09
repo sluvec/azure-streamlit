@@ -46,9 +46,26 @@ azure_streamlit/
 
 ## Deployment
 
-Dashboard można łatwo wdrożyć na platformach:
+Dashboard jest wdrażany automatycznie na Azure App Service przez GitHub Actions.
+
+**🔗 Live App**: https://azure-streamlit-dashboard.azurewebsites.net
+
+### Dokumentacja Deployment
+
+- **[DEPLOYMENT_REPORT.md](DEPLOYMENT_REPORT.md)** - Szczegółowy raport z procesu wdrożenia, napotkanych problemów i rozwiązań
+- **[WORKFLOW_TEMPLATE.md](WORKFLOW_TEMPLATE.md)** - Kompletny szablon i instrukcje do wdrażania podobnych projektów
+
+### Automatyczne Wdrażanie
+
+Każdy push do gałęzi `main` automatycznie uruchamia deployment do Azure:
+1. GitHub Actions wykonuje workflow
+2. Kod jest pakowany do ZIP
+3. Deployment do Azure App Service (async)
+4. Aplikacja dostępna w ciągu kilku minut
+
+### Platformy (alternatywy)
 - Streamlit Cloud
-- Azure App Service
+- Azure App Service ✅ (obecnie używane)
 - Heroku
 - Docker
 
